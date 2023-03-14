@@ -8,13 +8,13 @@ import { Contract } from 'ethers';
 const DAY = 60 * 60 * 24;
 const YEAR = 360 * DAY;
 
-describe('BRAC Membership', function () {
+describe('BittreesResearch', function () {
     let contract: Contract;
     let owner: SignerWithAddress;
     let otherUser: SignerWithAddress;
 
     beforeEach(async function () {
-        const Contract = await hre.ethers.getContractFactory('BRACMembership');
+        const Contract = await hre.ethers.getContractFactory('BittreesResearch');
 
         const [_owner, _otherUser] = await hre.ethers.getSigners();
         owner = _owner;

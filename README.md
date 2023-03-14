@@ -1,6 +1,6 @@
 # bittrees-research-contract
 
-Bittrees Research Membership Contract (based on ERC-1155).
+Bittrees Research Contract (based on ERC-1155).
 
 ![Solidity tests](https://github.com/Bittrees-Technology/bittrees-research-contract/actions/workflows/continuous-integration.yaml/badge.svg)
 
