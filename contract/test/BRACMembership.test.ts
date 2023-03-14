@@ -6,8 +6,7 @@ import { time } from '@nomicfoundation/hardhat-network-helpers';
 import { Contract } from 'ethers';
 
 const DAY = 60 * 60 * 24;
-const WEEK = DAY * 7;
-const YEAR = 52 * WEEK;
+const YEAR = 360 * DAY;
 
 describe('BRAC Membership', function () {
     let contract: Contract;
@@ -181,7 +180,7 @@ describe('BRAC Membership', function () {
                 value: hre.ethers.utils.parseEther('10.0'),
             });
             const tokenId = 1;
-            const timestampNow = Math.floor(unixNow + 52 * 604800);
+            const timestampNow = Math.floor(unixNow + 360 * 86400);
             const timestampFromContract = await contract.expirationTimestamps(
                 tokenId
             );
