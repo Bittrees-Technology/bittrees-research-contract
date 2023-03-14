@@ -6,7 +6,7 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
 
-contract BAGMembership is ERC1155Upgradeable, AccessControlUpgradeable {
+contract BittreesResearch is ERC1155Upgradeable, AccessControlUpgradeable {
     using CountersUpgradeable for CountersUpgradeable.Counter;
     CountersUpgradeable.Counter private _tokenIds;
     uint256 public mintPrice;
@@ -22,8 +22,8 @@ contract BAGMembership is ERC1155Upgradeable, AccessControlUpgradeable {
     }
 
     function initialize() public initializer {
-        mintPrice = 0.01 ether;
-        expirationTimeframe = 52 weeks;
+        mintPrice = 0.025 ether;
+        expirationTimeframe = 360 days;
 
         __ERC1155_init("ipfs://QmXMsaYXedBE5BDXwXfNNWgoo36ZkY3XoNqecGFU97RZQh/1");
         __AccessControl_init();

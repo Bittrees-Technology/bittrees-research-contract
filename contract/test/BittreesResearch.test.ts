@@ -6,16 +6,15 @@ import { time } from '@nomicfoundation/hardhat-network-helpers';
 import { Contract } from 'ethers';
 
 const DAY = 60 * 60 * 24;
-const WEEK = DAY * 7;
-const YEAR = 52 * WEEK;
+const YEAR = 360 * DAY;
 
-describe('BAGMembership', function () {
+describe('BittreesResearch', function () {
     let contract: Contract;
     let owner: SignerWithAddress;
     let otherUser: SignerWithAddress;
 
     beforeEach(async function () {
-        const Contract = await hre.ethers.getContractFactory('BAGMembership');
+        const Contract = await hre.ethers.getContractFactory('BittreesResearch');
 
         const [_owner, _otherUser] = await hre.ethers.getSigners();
         owner = _owner;
@@ -181,7 +180,7 @@ describe('BAGMembership', function () {
                 value: hre.ethers.utils.parseEther('10.0'),
             });
             const tokenId = 1;
-            const timestampNow = Math.floor(unixNow + 52 * 604800);
+            const timestampNow = Math.floor(unixNow + 360 * 86400);
             const timestampFromContract = await contract.expirationTimestamps(
                 tokenId
             );
