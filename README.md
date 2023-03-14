@@ -1,8 +1,8 @@
-# bag-membership
+# bittrees-research-contract
 
-![Solidity tests](https://github.com/briangershon/bag-membership/actions/workflows/continuous-integration.yaml/badge.svg)
+Bittrees Research Membership Contract (based on ERC-1155).
 
-Builder's Advocacy Group Membership Contract (based on ERC-1155)
+![Solidity tests](https://github.com/Bittrees-Technology/bittrees-research-contract/actions/workflows/continuous-integration.yaml/badge.svg)
 
 Includes:
 
