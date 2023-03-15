@@ -25,7 +25,7 @@ contract BittreesResearch is ERC1155Upgradeable, AccessControlUpgradeable {
         mintPrice = 0.025 ether;
         expirationTimeframe = 360 days;
 
-        __ERC1155_init("ipfs://QmXMsaYXedBE5BDXwXfNNWgoo36ZkY3XoNqecGFU97RZQh/1");
+        __ERC1155_init("ipfs://QmTG6JmuJxrLZEBzii8osQ2a2wjTfJLu7zQJAmkSVeFaSG/1");
         __AccessControl_init();
 
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
